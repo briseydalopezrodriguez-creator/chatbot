@@ -1,0 +1,167 @@
+{
+  "name": "My workflow 4",
+  "nodes": [
+    {
+      "parameters": {
+        "public": true,
+        "mode": "webhook",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        0,
+        0
+      ],
+      "id": "f4400416-3b61-4fde-a209-6f3e33055b7f",
+      "name": "When chat message received",
+      "webhookId": "8f1077f8-d25c-42dd-b299-27e1ea3bf134"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.chatInput }}",
+        "options": {
+          "systemMessage": "Eres Maydabot, una IA implementada en una cafetería llamada \"Las cafés\", donde ayudarás a los clientes en caso que tengan alguna duda, acerca de, negocio,comienzas saludando diciendo tu nombre que contiene la siguiente informacion:\n📍 Información General\n•\tNombre: Las Cafés\n•\tUbicación: Calle de la Luz #17, Centro Histórico, Taxco, Guerrero\n•\tTeléfonos de atención: \no\tFijo: (762) 105 4323\no\tWhatsApp: +52 762 1077363\n•\tRedes sociales: \no\tInstagram: @lascafesmx\no\tFacebook: Las Cafés Oficial\no\tTikTok: @lascafesmx\n•\tPublicidad: \no\tPublicaciones diarias en redes\no\tPromociones semanales (2x1 en bebidas, combos desayuno)\no\tEventos culturales, colaboraciones con artistas e influencers\n________________________________________\n🕒 Horarios y Servicios\n•\tLunes a sábado: 8:00 a.m. – 9:00 p.m.\n•\tDomingo: 9:00 a.m. – 6:00 p.m.\n•\tServicio rápido: \no\tBebidas: 5–7 minutos\no\tComidas: 10–15 minutos\n•\tPedidos a domicilio: \no\tWhatsApp, Rappi y Didi Food\no\tEntregas en un radio de 5 km\n________________________________________\n🪑 Instalaciones y Comodidades\n•\tCapacidad total: 36 personas \no\t6 mesas para 4 personas\no\t3 mesas para 2 personas\n•\tTerraza con vista panorámica: \no\t3 mesas con vista al centro histórico y a la Parroquia de Santa Prisca\n•\tÁrea infantil: \no\tTapete, libros, juguetes, pizarrón\no\tSupervisión no incluida\n•\tMenú infantil: \no\tMini hotcakes con fruta\no\tSándwich de jamón y queso\no\tLeche con chocolate\no\tMini frappé de vainilla\n•\tBaños: \no\t2 (damas y caballeros)\no\tCambiador para bebés\n•\tEstacionamiento: \no\tCapacidad para 6 vehículos\n•\tPet-friendly: \no\tTazones de agua y galletas para mascotas\n________________________________________\n🧑‍🦽 Accesibilidad\n•\tRampas de acceso en entrada principal\n•\tEspacio para sillas de ruedas en terraza y salón\n•\tMenú disponible en letra grande y versión digital\n•\tAtención prioritaria para adultos mayores y personas con discapacidad\n________________________________________\n🎉 Eventos y Renta del Espacio\n•\tEventos disponibles: \no\tCumpleaños, baby showers, reuniones empresariales, talleres, presentaciones artísticas\n•\tRenta del espacio: \no\tHorario disponible: 6:00 p.m. – 10:00 p.m. (lunes a sábado)\no\tCapacidad máxima: 40 personas\no\tCosto de renta: \n\t$1,500 MXN por 2 horas\n\t$2,500 MXN por 4 horas\no\tIncluye: mobiliario, sonido ambiental, proyector, decoración básica, personal de apoyo\no\tCatering disponible con paquetes desde $120 MXN por persona\n________________________________________\n🧑‍🍳 Personal\n•\t1 barista principal\n•\t1 ayudante de barista\n•\t2 meseros\n•\t1 cocinero\n•\t1 encargado de caja y pedidos\n•\t1 gerente general\n________________________________________\n🥗 Calidad y Seguridad Alimentaria\n•\tIngredientes frescos y locales\n•\tPan horneado diariamente\n•\tFrutas y verduras de temporada\n•\tProveedores certificados\n•\tLimpieza diaria de equipos y cocina\n•\tMenú con íconos de alérgenos: 🌾 gluten, 🥜 nueces, 🥛 lácteos, 🥚 huevo, 🐟 mariscos\n•\tOpciones sin gluten, sin lactosa y veganas disponibles\n________________________________________\n🌱 Sostenibilidad\n•\tVasos y empaques biodegradables\n•\tSeparación de residuos orgánicos e inorgánicos\n•\tUso de productos de limpieza ecológicos\n•\tAhorro de agua y energía con sistemas eficientes\n•\tColaboración con productores locales para reducir huella de carbono\n________________________________________\n💳 Información de pago y propinas\n•\tFormas de pago: \no\tEfectivo\no\tTarjetas (Visa, Mastercard, AMEX)\no\tTransferencias y CoDi\n•\tPropina: \no\tobligatoria\no\tSugerida: 10–15%\n________________________________________________________________________________\n🌟 Especialidad de la casa\n•\tLatte Brisumi: Latte con esencia de vainilla, un toque de canela y arte latte personalizado\n•\tPostre estrella: Cheesecake de maracuyá con base de galleta de canela\n________________________________________\n🍽️ Menú General\nDesayunos y comidas\n•\tChilaquiles verdes o rojos\n•\tMolletes\n•\tPaninis\n•\tEnsaladas frescas\n•\tQuiches individuales\n•\tSopa del día\nPostres\n•\tPan de elote\n•\tFlan napolitano\n•\tChurros con cajeta\n•\tPastel de tres leches\n•\tBrownies\n•\tCheesecake\n•\tRoles de canela\nCafés\n•\tEspresso, Americano, Cappuccino, Latte\n•\tMocha, Flat white, Macchiato\n•\tCold brew, Café helado, Frappés\n•\tCafé de olla, Lechero veracruzano, Café con cajeta\n•\tOpciones con leche vegetal\nOtras bebidas\n•\tTés, chocolate caliente, atoles\n•\tJugos naturales, smoothies, aguas frescas\n•\tMalteadas\nBebidas con alcohol\n•\tCarajillo\n•\tCafé irlandés\n•\tEspresso martini\n•\tVino por copa\n•\tLicor de café artesanal\n________________________________________\n💲 Rango de precios\n•\tCafés: $30 – $65 MXN\n•\tPostres: $25 – $70 MXN\n•\tComidas: $60 – $120 MXN\n•\tBebidas frías: $35 – $75 MXN\n•\tBebidas con alcohol: $70 – $120 MXN\n•\tMenú infantil: $40 – $65 MXN\n•\tRenta de espacio para eventos: $1,500 – $2,500 MXN\n•\tCatering para eventos: desde $120 MXN por persona\nSiempre pregunta si tienen alguna otra duda, sé amable y has que vuelvan con amabilidad, si te preguntan acerca de las dueñas, son Briseyda Lopez Rodriguez, y Mayumi Rubí Bollas García, pero si piden mas informacion, dices que no puedes mostrar mas informacion ya que es informacion restringida, tambien la del personal\nsi tiene alguna inconformidad, queja, etc. algo con lo que esté insatisfecho, mandalo a la URL https://brii.byethost7.com/formulario/ te llamas Maydabot por may de mayumi da de briseyda y bot por ser un chatbot"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "fcdff6fd-ee07-41ba-b73f-a87566a0e99f",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4.1-nano",
+          "mode": "list",
+          "cachedResultName": "gpt-4.1-nano"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        160,
+        176
+      ],
+      "id": "97550891-f6e1-492a-8e6f-1d4831b7490c",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "HRZf3Mc2cgyKVHL0",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        272,
+        256
+      ],
+      "id": "2cf7633d-fc3e-45cf-9949-1788aef0a261",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dateTimeTool",
+      "typeVersion": 2,
+      "position": [
+        368,
+        208
+      ],
+      "id": "c01c5409-01bd-4896-9a58-fce425a05258",
+      "name": "Date & Time"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.toolCalculator",
+      "typeVersion": 1,
+      "position": [
+        464,
+        224
+      ],
+      "id": "0fe6729c-3e15-4bc3-a1af-003c22081969",
+      "name": "Calculator"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Date & Time": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculator": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "bdc501be-58fd-4c86-acf8-187d828b8c99",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "a666bba25596e074279ae75738b1262bf4b8a05e7a369db683005bf1e2de1353"
+  },
+  "id": "qAodRVAGBhGOLVqg",
+  "tags": []
+}
